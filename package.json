@@ -6,6 +6,7 @@
   "description": "JUST TYPE: เกมฝึกพิมพ์ไทย/อังกฤษ/ภาษา C บนเว็บ",
   "scripts": {
     "start": "node scripts/serve.mjs",
+    "poster": "node scripts/poster.mjs",
     "test": "node --test"
   }
 }

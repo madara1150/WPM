@@ -4,6 +4,16 @@
 ## 🚀 JUST TYPE 2.0 (เวอร์ชันเว็บ)
 ต่อยอดจากโปรแกรม command prompt ภาษา C ([`zaza.c`](zaza.c)) มาเป็นเว็บแอปในโฟลเดอร์ [`docs/`](docs/) ไม่มี dependency และไม่ต้อง build
 
+**เล่นได้เลยที่ https://madara1150.github.io/WPM/**
+
+![หน้าพิมพ์ภาษาไทยพร้อมแป้นเกษมณี](poster/screens/typing.png)
+
+| ผลลัพธ์ | เกมฝนคำ | สถิติ |
+|-----|-----|-----|
+| ![หน้าผลลัพธ์](poster/screens/results.png) | ![เกมฝนคำ](poster/screens/rain.png) | ![หน้าสถิติ](poster/screens/stats.png) |
+
+> ภาพหน้าจอใช้ข้อมูลตัวอย่างและการพิมพ์จำลอง
+
 | หมวด | ฟีเจอร์ |
 |-----|-----|
 | โหมดทดสอบ | จับเวลา 15–120 วินาที, จำนวนคำ, ข้อความ, โจทย์ประจำวัน (ข้อความเดียวกันทุกเครื่อง), ฝึกจุดอ่อน (เลือกคำจากปุ่มที่พลาดบ่อย) |
@@ -27,8 +37,11 @@ npm start
 npm test
 ```
 
-### เปิดบน GitHub Pages
-ไปที่ Settings → Pages ของ repository แล้วเลือก branch `main` โฟลเดอร์ `/docs`
+สร้างภาพหน้าจอและ poster ใหม่ได้ด้วยคำสั่งนี้ (ต้องมี Chrome หรือ Edge)
+
+```bash
+npm run poster
+```
 
 ### โครงสร้าง
 ```text
@@ -36,6 +49,7 @@ docs/index.html      หน้าเกม
 docs/about.html      หน้าแนะนำโปรเจกต์เดิม
 docs/app/js/         engine, stats, rain = logic ล้วน / main, rainview, panels = UI
 docs/app/css/app.css ธีมและหน้าตา
+poster/              poster.html ต้นฉบับ poster, poster.jpg และภาพหน้าจอ
 test/                unit test ของ logic
 zaza.c               โปรแกรม C ต้นฉบับ
 ```
@@ -49,7 +63,9 @@ zaza.c               โปรแกรม C ต้นฉบับ
 ## ➡️ Youtube 🟢
 >https://www.youtube.com/watch?v=t_vrVh9D7Ug
 ## ➡️ Website 🔵
->https://tanathip64070045.github.io/web.github.io/
+>https://madara1150.github.io/WPM/
+>
+>เว็บเดิม: https://tanathip64070045.github.io/web.github.io/
 
 ## ➡️ Tool ⚪️
 > **เวอร์ชันเว็บ (2.0):** HTML, CSS, JavaScript (ES modules), Web Audio API และ `node:test` สำหรับ unit test
@@ -64,7 +80,8 @@ zaza.c               โปรแกรม C ต้นฉบับ
 #include <windows.h>
 ```
 ## ➡️ Poster 🟤
-> * [Poster (download)](https://drive.google.com/drive/folders/1WXJEBurdrSa-XMWix4ImUTYy-2P_aDvL?usp=sharing)
+> * [Poster (download)](poster/poster.jpg)
+> * [Poster เวอร์ชันแรก](https://drive.google.com/drive/folders/1WXJEBurdrSa-XMWix4ImUTYy-2P_aDvL?usp=sharing)
 > 
 >  ![Poster (download)](poster/poster.jpg)
 
